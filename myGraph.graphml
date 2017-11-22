@@ -1,0 +1,100 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+
+  <key id="v_name" for="node" attr.name="name" attr.type="string"/>
+  <key id="v_fraud" for="node" attr.name="fraud" attr.type="int"/>
+  <key id="e_edgeType" for="edge" attr.name="edgeType" attr.type="string"/>
+  <graph id="G" edgedefault="directed">
+
+      <node id="a">
+         <data key = "v_name">Alice</data>
+         <data key = "v_fraud">1</data>
+      </node>
+           
+      <node id="b">
+         <data key = "v_name">Bob</data>
+         <data key = "v_fraud">0</data>
+      </node>
+           
+      <node id="c">
+         <data key = "v_name">Charlie</data>
+         <data key = "v_fraud">0</data>
+      </node>
+           
+      <node id="d">
+         <data key = "v_name">David</data>
+         <data key = "v_fraud">0</data>
+      </node>
+           
+      <node id="e">
+         <data key = "v_name">Esther</data>
+         <data key = "v_fraud">0</data>
+      </node>
+           
+      <node id="f">
+         <data key = "v_name">Fanny</data>
+         <data key = "v_fraud">0</data>
+      </node>
+           
+      <node id="g">
+         <data key = "v_name">Gabby</data>
+         <data key = "v_fraud">0</data>
+      </node>
+           
+      <node id="h">
+         <data key = "v_name">Fraudster</data>
+         <data key = "v_fraud">1</data>
+      </node>
+           
+
+      <edge source="a" target="b">
+      <data key="e_edgeType">call</data>
+      </edge>
+           
+      <edge source="b" target="c">
+      <data key="e_edgeType">sms</data>
+      </edge>
+           
+      <edge source="c" target="b">
+      <data key="e_edgeType">sms</data>
+      </edge>
+           
+      <edge source="f" target="c">
+      <data key="e_edgeType">sms</data>
+      </edge>
+           
+      <edge source="e" target="f">
+      <data key="e_edgeType">sms</data>
+      </edge>
+           
+      <edge source="e" target="d">
+      <data key="e_edgeType">call</data>
+      </edge>
+           
+      <edge source="d" target="a">
+      <data key="e_edgeType">call</data>
+      </edge>
+           
+      <edge source="d" target="e">
+      <data key="e_edgeType">sms</data>
+      </edge>
+           
+      <edge source="a" target="e">
+      <data key="e_edgeType">call</data>
+      </edge>
+           
+      <edge source="a" target="h">
+      <data key="e_edgeType">call</data>
+      </edge>
+           
+      <edge source="f" target="h">
+      <data key="e_edgeType">call</data>
+      </edge>
+           
+  </graph>
+</graphml>
+  
